@@ -13,7 +13,7 @@ from discord.guild import Guild
 intents = discord.Intents.default()
 
 intents.members = True
-client = commands.Bot(command_prefix="^", intents = intents, activity=discord.Activity(name='RXG ESPORTS', type=discord.ActivityType.watching)) 
+client = commands.Bot(command_prefix="^", intents = intents, activity=discord.Activity(name='ESPORTS', type=discord.ActivityType.watching)) 
 client.remove_command("help")
 
 @client.event
@@ -125,7 +125,8 @@ async def on_command_error(ctx, error):
         await ctx.send('**I DONT HAVE ENOUGH HIERARCHY TO DO THAT**')
 
 
-client.run('ODY5NDE0NjkxMDAzMzM0NjY2.YP93hw.7UBXcyf-XLOP2CLjkAjalOSr-VQ')
+client.run('-')
+
 
 
 
